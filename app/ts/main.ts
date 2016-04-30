@@ -1,3 +1,6 @@
 import {bootstrap}    from 'angular2/platform/browser';
-import {AppComponent} from './app.component';
-bootstrap(AppComponent);
+import {RootComponent} from './root.component';
+import {FirmaService} from './firma/firma.service';
+import {MitarbeiterService} from './mitarbeiter/mitarbeiter.service';
+
+bootstrap(RootComponent, [FirmaService, MitarbeiterService]);
